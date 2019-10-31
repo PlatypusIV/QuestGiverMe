@@ -5,7 +5,8 @@ import {rootReducer} from './reducers';
 
 const initialState = {
     
-    currentView : ''
+    currentView : '',
+    userTask:[]
 
 };
 
