@@ -1,14 +1,16 @@
 import {createStore} from 'react-redux';
 
+import {rootReducer} from './reducers';
 
-const storeConfig =()=>{
-    try {
-        
-    } catch (error) {
-        console.log(error);
-    }
-}
+
+const initialState = {
+    
+    currentView : ''
+
+};
+
+const store = createStore(rootReducer,initialState);
 
 module.exports={
-    storeConfig
+    store
 }

@@ -1,12 +1,17 @@
-const viewReducer =(state,action)=>{
-    try {
-        
-    } catch (error) {
-        console.log(error);
-    }
-}
+import { combineReducers } from 'redux';
 
-export const rootReducer=()=>{
+const viewReducer = (state, action) => {
+	let newState = { ...state };
+	try {
+		switch (action.type) {
+			case '':
+				break;
+			default:
+				break;
+		}
+	} catch (error) {
+		console.log(error);
+	}
+};
 
-}
-
+export const rootReducer = () => {};
